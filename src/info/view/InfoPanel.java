@@ -9,6 +9,10 @@ import javax.swing.JTextField;
 import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
 
+import java.awt.GridLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+
 public class InfoPanel extends JPanel
 {
 	private Controller app;
