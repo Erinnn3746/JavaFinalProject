@@ -18,11 +18,15 @@ public class InfoPanel extends JPanel
 	private Controller app;
 	private SpringLayout layout;
 	
+	private JPanel homePanel;
+	
 	public InfoPanel(Controller app)
 	{
 		super();
 		this.app = app;
 		this.layout = new SpringLayout();
+		
+		this.homePanel = new JPanel(new GridLayout(0,2));
 		
 		setupPanel();
 		setupListeners();
@@ -31,7 +35,8 @@ public class InfoPanel extends JPanel
 	
 	private void setupPanel()
 	{
-		
+		this.setLayout(layout);
+		this.setBackground(new Color(255, 193, 229));
 	}
 	
 	private void setupListeners()
