@@ -20,6 +20,10 @@ public class InfoPanel extends JPanel
 	
 	private JPanel homePanel;
 	
+	private JScrollPane dataPane;
+	
+	private JTextArea displayArea;
+	
 	public InfoPanel(Controller app)
 	{
 		super();
@@ -27,6 +31,9 @@ public class InfoPanel extends JPanel
 		this.layout = new SpringLayout();
 		
 		this.homePanel = new JPanel(new GridLayout(0,2));
+		this.dataPane = new JScrollPane();
+		
+		this.displayArea = new JTextArea();
 		
 		setupPanel();
 		setupListeners();
