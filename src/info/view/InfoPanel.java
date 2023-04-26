@@ -13,6 +13,11 @@ import java.awt.GridLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 
+/**
+ * Variable Initializer 
+ * @author ezha0219
+ *
+ */
 public class InfoPanel extends JPanel
 {
 	private Controller app;
@@ -40,17 +45,28 @@ public class InfoPanel extends JPanel
 		setupLayout();
 	}
 	
+	/**
+	 * The setup of the panel
+	 * Details and looks
+	 */
 	private void setupPanel()
 	{
 		this.setLayout(layout);
 		this.setBackground(new Color(255, 193, 229));
 	}
 	
+	/**
+	 * All the actions that are needed for buttons to work
+	 */
 	private void setupListeners()
 	{
 		
 	}
 	
+	/**
+	 * The layout of the panel
+	 * It can adjust the size and position of objects
+	 */
 	private void setupLayout()
 	{
 		
