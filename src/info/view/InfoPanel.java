@@ -102,10 +102,12 @@ public class InfoPanel extends JPanel implements ActionListener
 				if(playerTurn)
 				{
 					buttonOne.setText("O");	
+					playerTurn = (false);
 				}
 				else
 				{
 					buttonOne.setText("X");
+					playerTurn = (true);
 				}
 			}
 		});
@@ -118,10 +120,12 @@ public class InfoPanel extends JPanel implements ActionListener
 				if(playerTurn)
 				{
 					buttonTwo.setText("O");	
+					playerTurn = (false);
 				}
 				else
 				{
 					buttonTwo.setText("X");
+					playerTurn = (true);
 				}
 			}
 		});
@@ -134,10 +138,12 @@ public class InfoPanel extends JPanel implements ActionListener
 				if(playerTurn)
 				{
 					buttonThree.setText("O");	
+					playerTurn = (false);
 				}
 				else
 				{
 					buttonThree.setText("X");
+					playerTurn = (true);
 				}
 			}
 		});
@@ -150,10 +156,12 @@ public class InfoPanel extends JPanel implements ActionListener
 				if(playerTurn)
 				{
 					buttonFour.setText("O");	
+					playerTurn = (false);
 				}
 				else
 				{
 					buttonFour.setText("X");
+					playerTurn = (true);
 				}
 			}
 		});
@@ -165,11 +173,13 @@ public class InfoPanel extends JPanel implements ActionListener
 			{
 				if(playerTurn)
 				{
-					buttonFive.setText("O");	
+					buttonFive.setText("O");
+					playerTurn = (false);
 				}
 				else
 				{
 					buttonFive.setText("X");
+					playerTurn = (true);
 				}	
 			}
 		});
@@ -182,10 +192,12 @@ public class InfoPanel extends JPanel implements ActionListener
 				if(playerTurn)
 				{
 					buttonSix.setText("O");	
+					playerTurn = (false);
 				}
 				else
 				{
 					buttonSix.setText("X");
+					playerTurn = (true);
 				}
 			}
 		});
@@ -198,10 +210,12 @@ public class InfoPanel extends JPanel implements ActionListener
 				if(playerTurn)
 				{
 					buttonSeven.setText("O");	
+					playerTurn = (false);
 				}
 				else
 				{
 					buttonSeven.setText("X");
+					playerTurn = (true);
 				}	
 			}
 		});
@@ -214,10 +228,12 @@ public class InfoPanel extends JPanel implements ActionListener
 				if(playerTurn)
 				{
 					buttonEight.setText("O");	
+					playerTurn = (false);
 				}
 				else
 				{
 					buttonEight.setText("X");
+					playerTurn = (true);
 				}	
 			}
 		});
@@ -229,11 +245,13 @@ public class InfoPanel extends JPanel implements ActionListener
 			{
 				if(playerTurn)
 				{
-					buttonNine.setText("O");	
+					buttonNine.setText("O");
+					playerTurn = (false);
 				}
 				else
 				{
 					buttonNine.setText("X");
+					playerTurn = (true);
 				}
 			}
 		});
