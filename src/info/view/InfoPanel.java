@@ -127,6 +127,7 @@ public class InfoPanel extends JPanel implements ActionListener
 				{
 					
 				}
+				checkWins();
 			}
 		});
 	
@@ -152,6 +153,7 @@ public class InfoPanel extends JPanel implements ActionListener
 				{
 					
 				}
+				checkWins();
 			}
 		});
 	
@@ -176,7 +178,8 @@ public class InfoPanel extends JPanel implements ActionListener
 				else
 				{
 					
-				}x
+				}
+				checkWins();
 			}
 		});
 	
@@ -185,16 +188,24 @@ public class InfoPanel extends JPanel implements ActionListener
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				if(playerTurn)
+				if(!boolFour)
 				{
-					buttonFour.setText("O");	
-					playerTurn = (false);
+					if(playerTurn)
+					{
+						buttonFour.setText("O");	
+						playerTurn = (false);
+					}
+					else
+					{
+						buttonFour.setText("X");
+						playerTurn = (true);
+					}
 				}
 				else
 				{
-					buttonFour.setText("X");
-					playerTurn = (true);
+					
 				}
+				checkWins();
 			}
 		});
 		
@@ -203,16 +214,20 @@ public class InfoPanel extends JPanel implements ActionListener
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				if(playerTurn)
-				{
-					buttonFive.setText("O");
-					playerTurn = (false);
+				if(!boolFive) {
+
+					if(playerTurn)
+					{
+						buttonFive.setText("O");
+						playerTurn = (false);
+					}
+					else
+					{
+						buttonFive.setText("X");
+						playerTurn = (true);
+					}		
 				}
-				else
-				{
-					buttonFive.setText("X");
-					playerTurn = (true);
-				}	
+				checkWins();
 			}
 		});
 		
@@ -221,16 +236,19 @@ public class InfoPanel extends JPanel implements ActionListener
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				if(playerTurn)
-				{
-					buttonSix.setText("O");	
-					playerTurn = (false);
+				if(!boolSix) {
+					if(playerTurn)
+					{
+						buttonSix.setText("O");	
+						playerTurn = (false);
+					}
+					else
+					{
+						buttonSix.setText("X");
+						playerTurn = (true);
+					}
 				}
-				else
-				{
-					buttonSix.setText("X");
-					playerTurn = (true);
-				}
+				checkWins();
 			}
 		});
 		
@@ -239,16 +257,19 @@ public class InfoPanel extends JPanel implements ActionListener
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				if(playerTurn)
-				{
-					buttonSeven.setText("O");	
-					playerTurn = (false);
+				if (!boolSeven) {
+					if(playerTurn)
+					{
+						buttonSeven.setText("O");	
+						playerTurn = (false);
+					}
+					else
+					{
+						buttonSeven.setText("X");
+						playerTurn = (true);
+					}	
 				}
-				else
-				{
-					buttonSeven.setText("X");
-					playerTurn = (true);
-				}	
+				checkWins();
 			}
 		});
 		
@@ -257,16 +278,19 @@ public class InfoPanel extends JPanel implements ActionListener
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				if(playerTurn)
-				{
-					buttonEight.setText("O");	
-					playerTurn = (false);
+				if (!boolEight) {
+					if(playerTurn)
+					{
+						buttonEight.setText("O");	
+						playerTurn = (false);
+					}
+					else
+					{
+						buttonEight.setText("X");
+						playerTurn = (true);
+					}	
 				}
-				else
-				{
-					buttonEight.setText("X");
-					playerTurn = (true);
-				}	
+				checkWins();
 			}
 		});
 		
@@ -275,19 +299,62 @@ public class InfoPanel extends JPanel implements ActionListener
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				if(playerTurn)
-				{
-					buttonNine.setText("O");
-					playerTurn = (false);
+				if(!boolNine) {
+					if(playerTurn)
+					{
+						buttonNine.setText("O");
+						playerTurn = (false);
+					}
+					else
+					{
+						buttonNine.setText("X");
+						playerTurn = (true);
+					}
 				}
-				else
-				{
-					buttonNine.setText("X");
-					playerTurn = (true);
-				}
+				checkWins();
 			}
 		});
 	}
+	
+	private boolean checkWins() {
+		if(boolOne && boolTwo && boolThree){
+			return true;
+		}
+		if(boolOne && boolFour && boolSeven) {
+
+			return true;
+		}
+		if(boolTwo && boolFive && boolEight){
+
+			return true;
+		}
+		if(boolThree && boolSix && boolNine) {
+
+			return true;
+		}
+
+		if(boolFour & boolFive && boolSix) {
+
+			return true;
+		}
+
+		if(boolSeven && boolEight && boolNine) {
+
+			return true;
+		}
+
+		if(boolOne && boolFive && boolNine) {
+
+			return true;
+		}
+
+		if(boolThree && boolFive && boolSeven) {
+
+			return true;
+		}
+		return false;
+	}
+	
 	
 	/**
 	 * All the actions that are needed for buttons to work
