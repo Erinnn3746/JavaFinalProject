@@ -10,6 +10,8 @@ import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
 
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -19,7 +21,7 @@ import java.awt.Dimension;
  * @author ezha0219
  *
  */
-public class InfoPanel extends JPanel
+public class InfoPanel extends JPanel implements ActionListener
 {
 	private Controller app;
 	private SpringLayout layout;
@@ -29,6 +31,8 @@ public class InfoPanel extends JPanel
 	private JScrollPane dataPane;
 	
 	private JTextArea displayArea;
+	
+	private boolean playerTurn;
 	
 	private ArrayList<JButton> buttonList = new ArrayList<>();
 	private JButton buttonOne;
@@ -40,6 +44,7 @@ public class InfoPanel extends JPanel
 	private JButton buttonSeven;
 	private JButton buttonEight;
 	private JButton buttonNine;
+	
 	
 	public InfoPanel(Controller app)
 	{
@@ -72,9 +77,12 @@ public class InfoPanel extends JPanel
 		this.buttonList.add(buttonEight);
 		this.buttonList.add(buttonNine);
 		
+		this.playerTurn = (false);
+		
 		setupPanel();
 		setupListeners();
 		setupLayout();
+		
 	}
 	
 	/**
@@ -86,10 +94,75 @@ public class InfoPanel extends JPanel
 		this.setLayout(new GridLayout(3,3));
 		this.setBackground(new Color(255, 193, 229));
 		
-		for (JButton button : buttonList)
-		{
-			this.add(button);
-		}
+		this.add(buttonOne);
+		buttonOne.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) 
+			{
+				// TODO Auto-generated method stub	
+			}
+		});
+		this.add(buttonTwo);
+		buttonTwo.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) 
+			{
+				// TODO Auto-generated method stub	
+			}
+		});
+		this.add(buttonThree);
+		buttonThree.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) 
+			{
+				// TODO Auto-generated method stub	
+			}
+		});
+		this.add(buttonFour);
+		buttonFour.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) 
+			{
+				// TODO Auto-generated method stub	
+			}
+		});
+		this.add(buttonFive);
+		buttonFive.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) 
+			{
+				// TODO Auto-generated method stub	
+			}
+		});
+		this.add(buttonSix);
+		buttonSix.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) 
+			{
+				// TODO Auto-generated method stub	
+			}
+		});this.add(buttonSeven);
+		buttonSeven.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) 
+			{
+				// TODO Auto-generated method stub	
+			}
+		});this.add(buttonEight);
+		buttonEight.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) 
+			{
+				// TODO Auto-generated method stub	
+			}
+		});this.add(buttonNine);
+		buttonNine.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) 
+			{
+				// TODO Auto-generated method stub	
+			}
+		});
 	}
 	
 	/**
@@ -106,6 +179,13 @@ public class InfoPanel extends JPanel
 	 */
 	private void setupLayout()
 	{
+		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) 
+	{
+		// TODO Auto-generated method stub
 		
 	}
 }

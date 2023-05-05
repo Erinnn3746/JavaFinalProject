@@ -22,7 +22,7 @@ public class Controller
 	
 	public void start()
 	{
-		setItUp();
+//		setItUp();
 	}
 	
 	
@@ -33,7 +33,7 @@ public class Controller
 		textSetExample.add("I Love HotPot!");
 		textSetExample.add("");
 		textSetExample.add("Text");
-		String demo = "SQL Squirrel";
+		String demo = "";
 		textSetExample.add(demo);
 		
 		for (String data : textSetExample)
