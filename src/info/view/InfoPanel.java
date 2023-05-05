@@ -110,15 +110,22 @@ public class InfoPanel extends JPanel implements ActionListener
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				if(playerTurn)
+				if(!boolOne)
 				{
-					buttonOne.setText("O");	
-					playerTurn = (false);
+					if(playerTurn)
+					{
+						buttonOne.setText("O");	
+						playerTurn = (false);
+					}
+					else
+					{
+						buttonOne.setText("X");
+						playerTurn = (true);
+					}	
 				}
 				else
 				{
-					buttonOne.setText("X");
-					playerTurn = (true);
+					
 				}
 			}
 		});
@@ -128,15 +135,22 @@ public class InfoPanel extends JPanel implements ActionListener
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				if(playerTurn)
+				if(!boolTwo)
 				{
-					buttonTwo.setText("O");	
-					playerTurn = (false);
+					if(playerTurn)
+					{
+						buttonTwo.setText("O");	
+						playerTurn = (false);
+					}
+					else
+					{
+						buttonTwo.setText("X");
+						playerTurn = (true);
+					}
 				}
 				else
 				{
-					buttonTwo.setText("X");
-					playerTurn = (true);
+					
 				}
 			}
 		});
@@ -146,16 +160,23 @@ public class InfoPanel extends JPanel implements ActionListener
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				if(playerTurn)
+				if(!boolThree)
 				{
-					buttonThree.setText("O");	
-					playerTurn = (false);
+					if(playerTurn)
+					{
+						buttonThree.setText("O");	
+						playerTurn = (false);
+					}
+					else
+					{
+						buttonThree.setText("X");
+						playerTurn = (true);
+					}
 				}
 				else
 				{
-					buttonThree.setText("X");
-					playerTurn = (true);
-				}
+					
+				}x
 			}
 		});
 	
