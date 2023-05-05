@@ -10,6 +10,7 @@ import javax.swing.JTextArea;
 import javax.swing.JScrollPane;
 
 import java.awt.GridLayout;
+import java.util.ArrayList;
 import java.awt.Color;
 import java.awt.Dimension;
 
@@ -29,6 +30,17 @@ public class InfoPanel extends JPanel
 	
 	private JTextArea displayArea;
 	
+	private ArrayList<JButton> buttonList = new ArrayList<>();
+	private JButton buttonOne;
+	private JButton buttonTwo;
+	private JButton buttonThree;
+	private JButton buttonFour;
+	private JButton buttonFive;
+	private JButton buttonSix;
+	private JButton buttonSeven;
+	private JButton buttonEight;
+	private JButton buttonNine;
+	
 	public InfoPanel(Controller app)
 	{
 		super();
@@ -39,6 +51,26 @@ public class InfoPanel extends JPanel
 		this.dataPane = new JScrollPane();
 		
 		this.displayArea = new JTextArea();
+	
+		this.buttonOne = new JButton();
+		this.buttonTwo = new JButton();
+		this.buttonThree = new JButton();
+		this.buttonFour = new JButton();
+		this.buttonFive = new JButton();
+		this.buttonSix = new JButton();
+		this.buttonSeven = new JButton();
+		this.buttonEight = new JButton();
+		this.buttonNine = new JButton();
+		
+		this.buttonList.add(buttonOne);
+		this.buttonList.add(buttonTwo);
+		this.buttonList.add(buttonThree);
+		this.buttonList.add(buttonFour);
+		this.buttonList.add(buttonFive);
+		this.buttonList.add(buttonSix);
+		this.buttonList.add(buttonSeven);
+		this.buttonList.add(buttonEight);
+		this.buttonList.add(buttonNine);
 		
 		setupPanel();
 		setupListeners();
@@ -53,6 +85,11 @@ public class InfoPanel extends JPanel
 	{
 		this.setLayout(layout);
 		this.setBackground(new Color(255, 193, 229));
+		
+		for (JButton button : buttonList)
+		{
+			this.add(button);
+		}
 	}
 	
 	/**
