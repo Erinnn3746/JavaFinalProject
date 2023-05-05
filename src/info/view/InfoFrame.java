@@ -5,7 +5,7 @@ import info.controller.Controller;
 import javax.swing.JFrame;
 
 /**
- * 
+ * InfoFrame to carry the general look of the program
  * @author erin
  *
  */
@@ -14,6 +14,10 @@ public class InfoFrame extends JFrame
 	private Controller app;
 	private InfoPanel panel;
 	
+	/**
+	 * Constructor
+	 * @param app
+	 */
 	public InfoFrame(Controller app)
 	{
 		super();
@@ -23,10 +27,13 @@ public class InfoFrame extends JFrame
 		setupFrame();
 	}
 	
+	/**
+	 * This is the setupFrame method
+	 */
 	private void setupFrame()
 	{
 		this.setContentPane(panel);
-		this.setTitle(" ");
+		this.setTitle("Tic Tac Toe");
 		this.setSize(800, 600);
 		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
