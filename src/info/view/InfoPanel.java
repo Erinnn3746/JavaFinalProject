@@ -83,7 +83,7 @@ public class InfoPanel extends JPanel
 	 */
 	private void setupPanel()
 	{
-		this.setLayout(layout);
+		this.setLayout(new GridLayout(3,3));
 		this.setBackground(new Color(255, 193, 229));
 		
 		for (JButton button : buttonList)
