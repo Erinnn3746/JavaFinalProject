@@ -56,7 +56,6 @@ public class InfoPanel extends JPanel implements ActionListener
 	private boolean boolNine = false;
 	
 	
-	
 	public InfoPanel(Controller app)
 	{
 		super();
@@ -102,6 +101,7 @@ public class InfoPanel extends JPanel implements ActionListener
 	 */
 	private void setupPanel()
 	{
+		
 		this.setLayout(new GridLayout(3,3));
 		this.setBackground(new Color(255, 193, 229));
 		
@@ -130,6 +130,7 @@ public class InfoPanel extends JPanel implements ActionListener
 					
 				}
 				if(!checkWins()) {
+					new InfoStartPanel(app);
 					boolOne = true;
 					boolTwo = true;
 					boolThree = true;
@@ -141,6 +142,7 @@ public class InfoPanel extends JPanel implements ActionListener
 					boolNine = true;
 				}
 			}
+			
 		});
 	
 		this.add(buttonTwo);
@@ -168,6 +170,7 @@ public class InfoPanel extends JPanel implements ActionListener
 					
 				}
 				if(!checkWins()) {
+					new InfoStartPanel(app);
 					boolOne = true;
 					boolTwo = true;
 					boolThree = true;
@@ -178,7 +181,6 @@ public class InfoPanel extends JPanel implements ActionListener
 					boolEight = true;
 					boolNine = true;
 				}
-				
 			}
 		});
 	
@@ -207,6 +209,7 @@ public class InfoPanel extends JPanel implements ActionListener
 					
 				}
 				if(!checkWins()) {
+					new InfoStartPanel(app);
 					boolOne = true;
 					boolTwo = true;
 					boolThree = true;
@@ -245,6 +248,7 @@ public class InfoPanel extends JPanel implements ActionListener
 					
 				}
 				if(!checkWins()) {
+					new InfoStartPanel(app);
 					boolOne = true;
 					boolTwo = true;
 					boolThree = true;
@@ -278,6 +282,7 @@ public class InfoPanel extends JPanel implements ActionListener
 					boolFive = true;
 				}
 				if(!checkWins()) {
+					new InfoStartPanel(app);
 					boolOne = true;
 					boolTwo = true;
 					boolThree = true;
@@ -311,6 +316,7 @@ public class InfoPanel extends JPanel implements ActionListener
 					boolSix = true;
 				}
 				if(!checkWins()) {
+					new InfoStartPanel(app);
 					boolOne = true;
 					boolTwo = true;
 					boolThree = true;
@@ -344,6 +350,7 @@ public class InfoPanel extends JPanel implements ActionListener
 					boolSeven = true;
 				}
 				if(!checkWins()) {
+					new InfoStartPanel(app);
 					boolOne = true;
 					boolTwo = true;
 					boolThree = true;
@@ -377,6 +384,7 @@ public class InfoPanel extends JPanel implements ActionListener
 				}
 
 				if(!checkWins()) {
+					new InfoStartPanel(app);
 					boolOne = true;
 					boolTwo = true;
 					boolThree = true;
@@ -409,6 +417,7 @@ public class InfoPanel extends JPanel implements ActionListener
 					boolNine = true;
 				}
 				if(!checkWins()) {
+					new InfoStartPanel(app);
 					boolOne = true;
 					boolTwo = true;
 					boolThree = true;
