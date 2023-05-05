@@ -56,7 +56,10 @@ public class InfoPanel extends JPanel implements ActionListener
 	private boolean boolNine = false;
 	
 	
-	
+	/**
+	 * This is the constructor
+	 * @param app
+	 */
 	public InfoPanel(Controller app)
 	{
 		super();
@@ -115,7 +118,7 @@ public class InfoPanel extends JPanel implements ActionListener
 					if(playerTurn)
 					{
 						buttonOne.setText("O");	
-						playerTurn = (false);
+						playerTurn = (true);
 					}
 					else
 					{
@@ -123,7 +126,7 @@ public class InfoPanel extends JPanel implements ActionListener
 						playerTurn = (true);
 					}	
 
-					boolOne = true;
+					boolOne = false;
 				}
 				else
 				{
@@ -131,14 +134,14 @@ public class InfoPanel extends JPanel implements ActionListener
 				}
 				if(!checkWins()) {
 					boolOne = true;
-					boolTwo = true;
-					boolThree = true;
-					boolFour = true;
-					boolFive = true;
-					boolSix = true;
-					boolSeven = true;
-					boolEight = true;
-					boolNine = true;
+					boolTwo = false;
+					boolThree = false;
+					boolFour = false;
+					boolFive = false;
+					boolSix = false;
+					boolSeven = false;
+					boolEight = false;
+					boolNine = false;
 				}
 			}
 		});
@@ -206,7 +209,8 @@ public class InfoPanel extends JPanel implements ActionListener
 				{
 					
 				}
-				if(!checkWins()) {
+				if(!checkWins()) 
+				{
 					boolOne = true;
 					boolTwo = true;
 					boolThree = true;
@@ -244,7 +248,8 @@ public class InfoPanel extends JPanel implements ActionListener
 				{
 					
 				}
-				if(!checkWins()) {
+				if(!checkWins()) 
+				{
 					boolOne = true;
 					boolTwo = true;
 					boolThree = true;
@@ -263,7 +268,8 @@ public class InfoPanel extends JPanel implements ActionListener
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				if(!boolFive) {
+				if(!boolFive) 
+				{
 
 					if(playerTurn)
 					{
@@ -277,7 +283,12 @@ public class InfoPanel extends JPanel implements ActionListener
 					}		
 					boolFive = true;
 				}
-				if(!checkWins()) {
+				else
+				{
+					
+				}
+				if(!checkWins()) 
+				{
 					boolOne = true;
 					boolTwo = true;
 					boolThree = true;
@@ -296,7 +307,8 @@ public class InfoPanel extends JPanel implements ActionListener
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				if(!boolSix) {
+				if(!boolSix) 
+				{
 					if(playerTurn)
 					{
 						buttonSix.setText("O");	
@@ -310,7 +322,12 @@ public class InfoPanel extends JPanel implements ActionListener
 
 					boolSix = true;
 				}
-				if(!checkWins()) {
+				else
+				{
+					
+				}
+				if(!checkWins()) 
+				{
 					boolOne = true;
 					boolTwo = true;
 					boolThree = true;
@@ -329,7 +346,8 @@ public class InfoPanel extends JPanel implements ActionListener
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				if (!boolSeven) {
+				if (!boolSeven) 
+				{
 					if(playerTurn)
 					{
 						buttonSeven.setText("O");	
@@ -343,7 +361,12 @@ public class InfoPanel extends JPanel implements ActionListener
 
 					boolSeven = true;
 				}
-				if(!checkWins()) {
+				else
+				{
+					
+				}
+				if(!checkWins()) 
+				{
 					boolOne = true;
 					boolTwo = true;
 					boolThree = true;
@@ -362,7 +385,8 @@ public class InfoPanel extends JPanel implements ActionListener
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				if (!boolEight) {
+				if (!boolEight) 
+				{
 					if(playerTurn)
 					{
 						buttonEight.setText("O");	
@@ -375,11 +399,15 @@ public class InfoPanel extends JPanel implements ActionListener
 					}	
 					boolEight = true;
 				}
-
-				if(!checkWins()) {
-					boolOne = true;
-					boolTwo = true;
-					boolThree = true;
+				else
+				{
+					
+				}
+				if(!checkWins()) 
+				{
+					boolOne = false;
+					boolTwo = false;
+					boolThree = false;
 					boolFour = true;
 					boolFive = true;
 					boolSix = true;
@@ -395,20 +423,26 @@ public class InfoPanel extends JPanel implements ActionListener
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				if(!boolNine) {
+				if(!boolNine) 
+				{
 					if(playerTurn)
 					{
 						buttonNine.setText("O");
-						playerTurn = (false);
+						playerTurn = (true);
 					}
 					else
 					{
 						buttonNine.setText("X");
 						playerTurn = (true);
 					}
-					boolNine = true;
+					boolNine = false;
 				}
-				if(!checkWins()) {
+				else
+				{
+					
+				}
+				if(!checkWins()) 
+				{
 					boolOne = true;
 					boolTwo = true;
 					boolThree = true;
@@ -423,40 +457,47 @@ public class InfoPanel extends JPanel implements ActionListener
 		});
 	}
 	
-	private boolean checkWins() {
-		if(!boolOne && !boolTwo && !boolThree){
+	
+	/**
+	 * Method for checking wins
+	 * @return
+	 */
+	private boolean checkWins() 
+	{
+		if(!boolOne && !boolTwo && !boolThree)
+		{
 			return true;
 		}
-		if(!boolOne && !boolFour && !boolSeven) {
-
+		if(!boolOne && !boolFour && !boolSeven) 
+		{
 			return true;
 		}
-		if(!boolTwo && !boolFive && !boolEight){
-
+		if(!boolTwo && !boolFive && !boolEight)
+		{
 			return true;
 		}
-		if(!boolThree && !boolSix && !boolNine) {
-
-			return true;
-		}
-
-		if(!boolFour && !boolFive && !boolSix) {
-
-			return true;
-		}
-
-		if(!boolSeven && !boolEight && !boolNine) {
-
+		if(!boolThree && !boolSix && !boolNine) 
+		{
 			return true;
 		}
 
-		if(!boolOne && !boolFive && !boolNine) {
-
+		if(!boolFour && !boolFive && !boolSix) 
+		{
 			return true;
 		}
 
-		if(!boolThree && !boolFive && !boolSeven) {
+		if(!boolSeven && !boolEight && !boolNine) 
+		{
+			return true;
+		}
 
+		if(!boolOne && !boolFive && !boolNine) 
+		{
+			return true;
+		}
+
+		if(!boolThree && !boolFive && !boolSeven) 
+		{
 			return true;
 		}
 		return false;

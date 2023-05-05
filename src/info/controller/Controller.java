@@ -105,13 +105,13 @@ public class Controller
 	
 	public void save(String path, String contents)
 	{
-//		IOController.saveTextToFile(this,  path, contents);
+		IOController.saveTextToFile(this,  path, contents);
 	}
 	
 	
 	public String load(String path)
 	{
-//		String results = IOController.loadTextFromFile(this, path);
+		String results = IOController.loadTextFromFile(this, path);
 		
 		return " ";
 	}
