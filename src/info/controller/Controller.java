@@ -9,9 +9,16 @@ import java.util.Map;
 
 import javax.swing.JOptionPane;
 
-
+/**
+ * Constructor
+ * @author erin
+ *
+ */
 public class Controller
 {
+	/**
+	 * InfoFrame method
+	 */
 	private InfoFrame window;
 	
 	public Controller()
@@ -19,12 +26,17 @@ public class Controller
 		this.window = new InfoFrame(this);
 	}
 	
+	/**
+	 * Start method
+	 */
 	public void start()
 	{
 //		setItUp();
 	}
 	
-	
+	/**
+	 * This is the setItUp method for hash sets
+	 */
 	private void setItUp()
 	{
 		HashSet<String> textSetExample = new HashSet<String>();
@@ -73,7 +85,10 @@ public class Controller
 		}
 	}
 	
-	
+	/**
+	 * A democode for displaying texts
+	 * @return
+	 */
 	public String displayDemoCode()
 	{
 		String code = "Set Demp Code\n";
@@ -96,19 +111,30 @@ public class Controller
 		return code;
 	}
 
-	
+	/**
+	 * Handling error code block
+	 * @param error
+	 */
 	public void handleError(Exception error)
 	{
 		JOptionPane.showMessageDialog(window, error.getMessage(), "Oops!", JOptionPane.ERROR_MESSAGE);
 	}
 	
-	
+	/**
+	 * Save method block
+	 * @param path
+	 * @param contents
+	 */
 	public void save(String path, String contents)
 	{
 		IOController.saveTextToFile(this,  path, contents);
 	}
 	
-	
+	/**
+	 * Load method block
+	 * @param path
+	 * @return
+	 */
 	public String load(String path)
 	{
 		String results = IOController.loadTextFromFile(this, path);
