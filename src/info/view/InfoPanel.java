@@ -440,7 +440,7 @@ public class InfoPanel extends JPanel implements ActionListener
 			return true;
 		}
 
-		if(!boolFour & !boolFive && !boolSix) {
+		if(!boolFour && !boolFive && !boolSix) {
 
 			return true;
 		}

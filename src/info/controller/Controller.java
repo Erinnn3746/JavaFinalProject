@@ -9,7 +9,6 @@ import java.util.Map;
 
 import javax.swing.JOptionPane;
 
-import info.controller.IOController;
 
 public class Controller
 {
@@ -106,14 +105,14 @@ public class Controller
 	
 	public void save(String path, String contents)
 	{
-		IOController.saveTextToFile(this,  path, contents);
+//		IOController.saveTextToFile(this,  path, contents);
 	}
 	
 	
 	public String load(String path)
 	{
-		String results = IOController.loadTextFromFile(this, path);
+//		String results = IOController.loadTextFromFile(this, path);
 		
-		return results;
+		return " ";
 	}
 }
