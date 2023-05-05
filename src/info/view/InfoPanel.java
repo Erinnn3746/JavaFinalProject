@@ -343,7 +343,6 @@ public class InfoPanel extends JPanel implements ActionListener
 
 					boolSeven = true;
 				}
-
 				if(!checkWins()) {
 					boolOne = true;
 					boolTwo = true;
@@ -354,7 +353,8 @@ public class InfoPanel extends JPanel implements ActionListener
 					boolSeven = true;
 					boolEight = true;
 					boolNine = true;
-				}			}
+				}	
+			}
 		});
 		
 		this.add(buttonEight);
@@ -386,7 +386,8 @@ public class InfoPanel extends JPanel implements ActionListener
 					boolSeven = true;
 					boolEight = true;
 					boolNine = true;
-				}			}
+				}	
+			}
 		});
 		
 		this.add(buttonNine);
@@ -407,7 +408,6 @@ public class InfoPanel extends JPanel implements ActionListener
 					}
 					boolNine = true;
 				}
-
 				if(!checkWins()) {
 					boolOne = true;
 					boolTwo = true;
