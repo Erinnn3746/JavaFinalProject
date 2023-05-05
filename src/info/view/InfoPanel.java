@@ -99,6 +99,7 @@ public class InfoPanel extends JPanel implements ActionListener
 		
 	}
 	
+	
 	/**
 	 * The setup of the panel
 	 * Details and looks
@@ -513,6 +514,9 @@ public class InfoPanel extends JPanel implements ActionListener
 		
 	}
 
+	/**
+	 * Method block for ActionListener
+	 */
 	@Override
 	public void actionPerformed(ActionEvent e) 
 	{

@@ -4,6 +4,11 @@ import info.controller.Controller;
 
 import javax.swing.JFrame;
 
+/**
+ * 
+ * @author erin
+ *
+ */
 public class InfoFrame extends JFrame
 {
 	private Controller app;
