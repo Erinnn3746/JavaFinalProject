@@ -109,6 +109,7 @@ public class InfoPanel extends JPanel implements ActionListener
 				}
 			}
 		});
+	
 		this.add(buttonTwo);
 		buttonTwo.addActionListener(new ActionListener() {
 			@Override
@@ -124,57 +125,116 @@ public class InfoPanel extends JPanel implements ActionListener
 				}
 			}
 		});
+	
 		this.add(buttonThree);
 		buttonThree.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				// TODO Auto-generated method stub	
+				if(playerTurn)
+				{
+					buttonThree.setText("O");	
+				}
+				else
+				{
+					buttonThree.setText("X");
+				}
 			}
 		});
+	
 		this.add(buttonFour);
 		buttonFour.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				// TODO Auto-generated method stub	
+				if(playerTurn)
+				{
+					buttonFour.setText("O");	
+				}
+				else
+				{
+					buttonFour.setText("X");
+				}
 			}
 		});
+		
 		this.add(buttonFive);
 		buttonFive.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				// TODO Auto-generated method stub	
+				if(playerTurn)
+				{
+					buttonFive.setText("O");	
+				}
+				else
+				{
+					buttonFive.setText("X");
+				}	
 			}
 		});
+		
 		this.add(buttonSix);
 		buttonSix.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				// TODO Auto-generated method stub	
+				if(playerTurn)
+				{
+					buttonSix.setText("O");	
+				}
+				else
+				{
+					buttonSix.setText("X");
+				}
 			}
-		});this.add(buttonSeven);
+		});
+		
+		this.add(buttonSeven);
 		buttonSeven.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				// TODO Auto-generated method stub	
+				if(playerTurn)
+				{
+					buttonSeven.setText("O");	
+				}
+				else
+				{
+					buttonSeven.setText("X");
+				}	
 			}
-		});this.add(buttonEight);
+		});
+		
+		this.add(buttonEight);
 		buttonEight.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				// TODO Auto-generated method stub	
+				if(playerTurn)
+				{
+					buttonEight.setText("O");	
+				}
+				else
+				{
+					buttonEight.setText("X");
+				}	
 			}
-		});this.add(buttonNine);
+		});
+		
+		this.add(buttonNine);
 		buttonNine.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				// TODO Auto-generated method stub	
+				if(playerTurn)
+				{
+					buttonNine.setText("O");	
+				}
+				else
+				{
+					buttonNine.setText("X");
+				}
 			}
 		});
 	}
