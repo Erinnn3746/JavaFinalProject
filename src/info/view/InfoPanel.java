@@ -45,6 +45,17 @@ public class InfoPanel extends JPanel implements ActionListener
 	private JButton buttonEight;
 	private JButton buttonNine;
 	
+	private boolean boolOne = false;
+	private boolean boolTwo = false;
+	private boolean boolThree = false;
+	private boolean boolFour = false;
+	private boolean boolFive = false;
+	private boolean boolSix = false;
+	private boolean boolSeven = false;
+	private boolean boolEight = false;
+	private boolean boolNine = false;
+	
+	
 	
 	public InfoPanel(Controller app)
 	{
