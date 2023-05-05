@@ -99,7 +99,14 @@ public class InfoPanel extends JPanel implements ActionListener
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				// TODO Auto-generated method stub	
+				if(playerTurn)
+				{
+					buttonOne.setText("O");	
+				}
+				else
+				{
+					buttonOne.setText("X");
+				}
 			}
 		});
 		this.add(buttonTwo);
@@ -107,7 +114,14 @@ public class InfoPanel extends JPanel implements ActionListener
 			@Override
 			public void actionPerformed(ActionEvent e) 
 			{
-				// TODO Auto-generated method stub	
+				if(playerTurn)
+				{
+					buttonTwo.setText("O");	
+				}
+				else
+				{
+					buttonTwo.setText("X");
+				}
 			}
 		});
 		this.add(buttonThree);
