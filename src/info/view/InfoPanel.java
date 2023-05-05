@@ -127,7 +127,17 @@ public class InfoPanel extends JPanel implements ActionListener
 				{
 					
 				}
-				checkWins();
+//				if(!checkWins()) {
+//					boolOne = true;
+//					boolTwo = true;
+//					boolThree = true;
+//					boolFour = true;
+//					boolFive = true;
+//					boolSix = true;
+//					boolSeven = true;
+//					boolEight = true;
+//					boolNine = true;
+//				}
 			}
 		});
 	
@@ -153,7 +163,18 @@ public class InfoPanel extends JPanel implements ActionListener
 				{
 					
 				}
-				checkWins();
+				if(!checkWins()) {
+					boolOne = true;
+					boolTwo = true;
+					boolThree = true;
+					boolFour = true;
+					boolFive = true;
+					boolSix = true;
+					boolSeven = true;
+					boolEight = true;
+					boolNine = true;
+				}
+				
 			}
 		});
 	
@@ -179,7 +200,17 @@ public class InfoPanel extends JPanel implements ActionListener
 				{
 					
 				}
-				checkWins();
+				if(!checkWins()) {
+					boolOne = true;
+					boolTwo = true;
+					boolThree = true;
+					boolFour = true;
+					boolFive = true;
+					boolSix = true;
+					boolSeven = true;
+					boolEight = true;
+					boolNine = true;
+				}
 			}
 		});
 	
@@ -205,7 +236,17 @@ public class InfoPanel extends JPanel implements ActionListener
 				{
 					
 				}
-				checkWins();
+				if(!checkWins()) {
+					boolOne = true;
+					boolTwo = true;
+					boolThree = true;
+					boolFour = true;
+					boolFive = true;
+					boolSix = true;
+					boolSeven = true;
+					boolEight = true;
+					boolNine = true;
+				}
 			}
 		});
 		
@@ -227,7 +268,17 @@ public class InfoPanel extends JPanel implements ActionListener
 						playerTurn = (true);
 					}		
 				}
-				checkWins();
+				if(!checkWins()) {
+					boolOne = true;
+					boolTwo = true;
+					boolThree = true;
+					boolFour = true;
+					boolFive = true;
+					boolSix = true;
+					boolSeven = true;
+					boolEight = true;
+					boolNine = true;
+				}
 			}
 		});
 		
@@ -248,7 +299,17 @@ public class InfoPanel extends JPanel implements ActionListener
 						playerTurn = (true);
 					}
 				}
-				checkWins();
+				if(!checkWins()) {
+					boolOne = true;
+					boolTwo = true;
+					boolThree = true;
+					boolFour = true;
+					boolFive = true;
+					boolSix = true;
+					boolSeven = true;
+					boolEight = true;
+					boolNine = true;
+				}
 			}
 		});
 		
@@ -269,8 +330,18 @@ public class InfoPanel extends JPanel implements ActionListener
 						playerTurn = (true);
 					}	
 				}
-				checkWins();
-			}
+
+				if(!checkWins()) {
+					boolOne = true;
+					boolTwo = true;
+					boolThree = true;
+					boolFour = true;
+					boolFive = true;
+					boolSix = true;
+					boolSeven = true;
+					boolEight = true;
+					boolNine = true;
+				}			}
 		});
 		
 		this.add(buttonEight);
@@ -290,8 +361,18 @@ public class InfoPanel extends JPanel implements ActionListener
 						playerTurn = (true);
 					}	
 				}
-				checkWins();
-			}
+
+				if(!checkWins()) {
+					boolOne = true;
+					boolTwo = true;
+					boolThree = true;
+					boolFour = true;
+					boolFive = true;
+					boolSix = true;
+					boolSeven = true;
+					boolEight = true;
+					boolNine = true;
+				}			}
 		});
 		
 		this.add(buttonNine);
@@ -311,8 +392,18 @@ public class InfoPanel extends JPanel implements ActionListener
 						playerTurn = (true);
 					}
 				}
-				checkWins();
-			}
+
+				if(!checkWins()) {
+					boolOne = true;
+					boolTwo = true;
+					boolThree = true;
+					boolFour = true;
+					boolFive = true;
+					boolSix = true;
+					boolSeven = true;
+					boolEight = true;
+					boolNine = true;
+				}			}
 		});
 	}
 	
