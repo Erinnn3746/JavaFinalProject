@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>50</y>
+      <w>1330</w>
+      <h>840</h>
+    </coordinates>
+    <panel_attributes>JavaFinalProject
+
+Erin Zhang
+bg=pink</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>110</y>
+      <w>1250</w>
+      <h>750</h>
+    </coordinates>
+    <panel_attributes>src
+bg=#CCE5FF
+
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>730</x>
+      <y>130</y>
+      <w>570</w>
+      <h>710</h>
+    </coordinates>
+    <panel_attributes>info.view
+--
+bg=#CCFFE5
+
+layer=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>130</x>
+      <y>130</y>
+      <w>570</w>
+      <h>710</h>
+    </coordinates>
+    <panel_attributes>info.controller
+--
+bg=#FFE5CC
+
+layer=3</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>140</x>
+      <y>640</y>
+      <w>550</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Runner
+-
+_+ main(String []) : void_
+bg=#FFFFCC
+layer=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>140</x>
+      <y>170</y>
+      <w>550</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Controller
+--
+- InfoFrame(this)
++ start() : void
+
+--
++setItUp() : void
++ String displayDemoCode() : code;
++ handleError() : void
++ save() : void
++ load() : void
+
+
+bg=#FFFFCC
+layer=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>140</x>
+      <y>410</y>
+      <w>550</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>IOController
+-
++ IOController (String path, String text)
+
+--
++ buildDateBasedFilename() : fileName
++loadTextFromFile() : fileContents
+
+bg=#FFFFCC
+layer=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>170</y>
+      <w>550</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>InfoFrame
+--
+javax.swing.JFrame
++ JFrame(String)
+
+--
+
++ InfoFrame()
+- setupFrame() : void
+
+bg=#E5FFCC
+layer=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>410</y>
+      <w>550</w>
+      <h>290</h>
+    </coordinates>
+    <panel_attributes>InfoPanel
+--
+javax.swing.JPanel
++ JPanel(String)
+
+--
++ InfoPanel()
+- layout:SpringLayout
+- displayArea:JTextArea
+- Arraylist:ArrayList()
+- button:boolean
+
+--
+- setupPanel() : void
+- setupListeners() : void
+- setupLayout() : void
+- checkWins() : boolean
+
+--
++ actionPerformed() : void
+
+bg=#E5FFCC
+layer=4</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

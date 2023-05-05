@@ -401,19 +401,11 @@ public class InfoPanel extends JPanel implements ActionListener
 				}
 				else
 				{
-					
+					return;
 				}
 				if(!checkWins()) 
 				{
-					boolOne = false;
-					boolTwo = false;
-					boolThree = false;
-					boolFour = true;
-					boolFive = true;
-					boolSix = true;
-					boolSeven = true;
 					boolEight = true;
-					boolNine = true;
 				}	
 			}
 		});
